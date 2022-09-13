@@ -1,0 +1,130 @@
+* {
+    padding: 0%;
+    margin: 0%;
+} 
+
+body {
+    background:linear-gradient(to right,green,blue);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.main-div{
+    background-color: whitesmoke;
+    margin-top:3.5%;
+    max-width: 800px;
+   max-height: 80vh;   
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+}
+
+h2 {
+    margin-left: 10%;
+    font-family:'poppins';
+    font-size: larger;
+    padding-top: 3%;
+}
+
+input {
+    padding: 1.5%;
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+label {
+    padding-bottom: 5%;
+    font-family: 'poppins';
+
+
+}
+.label{
+    margin-left: 10%;
+}
+#label{
+    margin-left: 10%;
+}
+.labels{
+    margin-left: 1.5%;
+}
+
+.class{
+    margin-left: 1%;
+    width:76%;
+    height: 5vh;
+}
+.UP {
+    width: 72%;
+    margin-left: 20%;
+    height: 5vh;
+}
+.url {
+    height: 4vh;
+    width: 77.5%;
+    margin-left: 10%;
+}
+
+.message {
+    margin-top: 7%;
+}
+
+.last {
+    padding-bottom: 10%;
+    width: 77.5%;
+    margin-left: 10%;
+}
+
+.button {
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    padding: 2%;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-weight: 800;
+    background: linear-gradient(to right,blue,green);
+       
+}
+::placeholder{
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.button:hover{
+    background: linear-gradient(to right,green,blue);
+}
+.first-div{
+    display: flex;
+}
+p{
+    padding-left: 45%;
+    padding-top:3% ;
+}
+i{
+    font-size: 50px;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+@media (max-width:635px){
+.first-div{
+    display: block;
+}
+.come{
+    margin-left:9.5%;
+}
+.class{
+    width: 158%;
+}
+.UP{
+    width: 158%;  
+}
+}
+
