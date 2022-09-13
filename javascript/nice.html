@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="nice.css">
+    <link rel="stylesheet" href="and.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/888e661d6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button> -->
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Invoice</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Print</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"></div> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" style="width: 100%;">
+                <a class="navbar-brand" href="#">Tasty Meals</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="color:white">
+                            <a class="nav-link active" aria-current="page" href="#menu">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cart">ORDER!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="C:\Users\hp folio\Desktop\presentation\presentation.html">YOUR
+                                CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="icons">
+                        <div class="fas fa-shopping-cart" id="cart-btn">
+                            <span class="cat-quantity">0</span>
+                        </div>
+                        <a href="signup.html">
+                            <div class="fa-sharp fa-solid fa-arrow-right-from-bracket"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="shopping-cart">
+            <section class="container content-section" id="carts">
+
+                <h2 class="section-header" style="font-size: 30px ">Your Cart</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <button class="btnss btn-primary btn-purchase" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Buy Now</button>
+                    <strong class="cart-total-title" style="font-size: 20px;">Total :</strong>
+                    <span class="cart-total-price" style="font-size:20px ;">$0</span>
+                </div>
+            </section>
+        </div>
+
+    </header>
+
+    <section class="container content-section">
+        <h2 id="menu" class="section-header">MENU</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Chicken-Skewers</span>
+                <img class="shop-item-image" src="Images/f1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Fried-Chicken-Drumsticks</span>
+                <img class="shop-item-image" src="Images/f2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Spaghetti-Foodie</span>
+                <img class="shop-item-image" src="Images/f3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Rice-and-Chicken</span>
+                <img class="shop-item-image" src="Images/f4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$26.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Chicken-&-Potatoe-Fries</span>
+                <img class="shop-item-image" src="Images/f5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$20.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Fried-Chicken-Ketchup</span>
+                <img class="shop-item-image" src="Images/f6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$56.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Penne-Pasta-With-Sauce</span>
+                <img class="shop-item-image" src="Images/f7.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Baked-Quails</span>
+                <img class="shop-item-image" src="Images/baked-quails-pan-dark-surface.jpg" width="100%">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$60.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">shrimp-friedrice</span>
+                <img class="shop-item-image" src="Images/american-shrimp-friedrice.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$80.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Crispy-omelet</span>
+                <img class="shop-item-image"
+                    src="images/crispy-omelet-topped-with-minced-pork-mixed-vegetables-sauce.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$40.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Hot-Cheese-Pizza</span>
+                <img class="shop-item-image" src="Images/close-up-melted-cheese-pizza.jpg" width="100%">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$199.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Chicken-Friedrice</span>
+                <img class="shop-item-image" src="Images/chicken-friedrice.jpg" width="100%">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$150.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Chesse-Burger</span>
+                <img class="shop-item-image"
+                    src="Images/side-view-double-cheeseburger-with-grilled-beef-patties-cheese-lettuce-leaf-burger-buns.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$70.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Chicken-and-Sauce</span>
+                <img class="shop-item-image" src="Images/f14.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$100.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Schezwan-Noodles</span>
+                <img class="shop-item-image" src="images/schezwan-noodles.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$100.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">PERFECT RESTAURANT</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="Images/youtube.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="Images/spotify.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="Images/facebook (1).jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="and.js"></script>
+    <script src="nice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
